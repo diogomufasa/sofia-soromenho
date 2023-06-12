@@ -8,9 +8,10 @@ const Home = () => {
       <br className="max-md:hidden" />
       <p className="desc text-center">Dancer</p>
       </h1>
-    <Feed />
+      <Feed />
     </section>
   )
 }
+
 
 export default Home
