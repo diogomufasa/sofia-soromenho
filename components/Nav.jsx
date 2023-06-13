@@ -5,7 +5,9 @@ import { useState, useEffect } from "react";
 
 const Nav = () => {
   return (
-    <div>Hello</div>
+    <nav>
+    </nav>
+
   )
 }
 
