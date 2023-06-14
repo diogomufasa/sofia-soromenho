@@ -14,7 +14,7 @@ const Nav = () => {
               width={50}
               height={50}
             />
-            <h1 className="ml-2 text-2xl font-bold uppercase">Sofia Soromenho</h1>
+            <h1 className="ml-2 text-2xl font-bold uppercase text-cyan-950">Sofia Soromenho</h1>
         </Link>
       </div>
 
