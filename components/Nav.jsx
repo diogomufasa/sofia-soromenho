@@ -27,6 +27,9 @@ const Nav = () => {
           <Link href="/projects" >
             Projects
           </Link>
+          <Link href="/blog" >
+            Blog
+          </Link>
       </div>
 
 
