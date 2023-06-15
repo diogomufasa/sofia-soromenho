@@ -11,12 +11,24 @@ const Nav = () => {
             <Image
               src="/assets/images/logo.png"
               alt="logo"
-              width={50}
-              height={50}
+              width={70}
+              height={70}
             />
-            <h1 className="ml-2 text-2xl font-bold uppercase text-cyan-950">Sofia Soromenho</h1>
         </Link>
+        </div>
+
+        <div className="flex-between w-1/2 text-right">
+          <Link href="/about" >
+            About
+          </Link>
+          <Link href="/gallery" >
+            Gallery
+          </Link>
+          <Link href="/projects" >
+            Projects
+          </Link>
       </div>
+
 
     </nav>
 
