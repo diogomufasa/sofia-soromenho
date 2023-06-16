@@ -1,4 +1,5 @@
 import React from 'react'
+import {Heart} from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -7,6 +8,13 @@ const Footer = () => {
         <p className="text-center">© 2023 Sofia Soromenho</p>
       </div>
 
+
+      <div className="text-right">
+        <p className="text-center gap-1">Built with <Heart className="inline-block" size={20} /> by</p> 
+        <a href="https://github.com/diogomufasa" target="_blank" rel="noopener noreferrer">
+          Diogo Soromenho
+        </a>
+      </div>
     </footer>
 
   )
