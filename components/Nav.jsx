@@ -19,16 +19,16 @@ const Nav = () => {
         </div>
 
         <div className="flex-between w-1/2 text-right">
-          <Link href="/about" >
+          <Link href="/about" className="link-hover">
             About
           </Link>
-          <Link href="/gallery" >
+          <Link href="/gallery" className="link-hover" >
             Gallery
           </Link>
-          <Link href="/projects" >
+          <Link href="/projects" className="link-hover">
             Projects
           </Link>
-          <Link href="/blog" >
+          <Link href="/blog" className="link-hover">
             Blog
           </Link>
       </div>

@@ -22,7 +22,7 @@ const RootLayout = ({children}) => {
           <div className="gradient"/>
         </div>
 
-        <main className='app'>
+        <main className='app overflow-hidden'>
           <Nav />
           {children}
           <Footer />
