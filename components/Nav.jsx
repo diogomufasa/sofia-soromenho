@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -5,8 +7,20 @@ import { useState, useEffect } from "react";
 
 
 const Nav = () => {
+  const [isSticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setSticky(window.scrollY > 500);
+    });
+    
+  }, []);
+
+
+
+
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
+    <nav className={isSticky ? 'nav stickyNav' : 'nav'}>
       <div className="flex-between w-1/2">
         <Link href="/" className="flex-between">
             <Image
