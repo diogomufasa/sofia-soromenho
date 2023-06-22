@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import { Menu, X } from "lucide-react";
 
 
 
@@ -10,7 +11,6 @@ const Nav = () => {
   const [isSticky, setSticky] = useState(false);
   const [isCollapsed, setCollapsed] = useState(false);
   const [isToggled, setToggled] = useState(false);
-  const hamburgerRef = useRef(null);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -58,12 +58,9 @@ const Nav = () => {
       </div>
       ) : (
         // Render a hamburger menu for mobile screens
-        <button className={isToggled ? 'hamburger active' : 'hamburger'} ref={hamburgerRef} >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <div className="flex-col w-1/2 text-right">
+        {!isToggled ? <Menu/> : <X/>}
+        </div>
       )}
 
 
