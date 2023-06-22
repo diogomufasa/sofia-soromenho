@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect} from "react";
+import { Menu} from "lucide-react";
+import MediaNav from "./MediaNav";
 
 
 
@@ -57,13 +58,10 @@ const Nav = () => {
           </Link>
       </div>
       ) : (
-        // Render a hamburger menu for mobile screens
-        <div className="flex-col w-1/2 text-right">
-        {!isToggled ? <Menu/> : <X/>}
-        </div>
+        <button>
+        {!isToggled ? <Menu/> : <MediaNav/>}
+        </button>
       )}
-
-
     </nav>
 
   )
