@@ -3,7 +3,13 @@ import { useState, useEffect} from "react";
 import { X } from "lucide-react";
 
 const MediaNav = () => {
-    return (    
+    const [isToggled, setToggled] = useState(false);
+
+
+
+    return (
         <X/>
     )
 }
+
+export default MediaNav

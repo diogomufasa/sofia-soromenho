@@ -11,7 +11,6 @@ import MediaNav from "./MediaNav";
 const Nav = () => {
   const [isSticky, setSticky] = useState(false);
   const [isCollapsed, setCollapsed] = useState(false);
-  const [isToggled, setToggled] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -58,14 +57,12 @@ const Nav = () => {
           </Link>
       </div>
       ) : (
-        <button>
-        {!isToggled ? <Menu/> : <MediaNav/>}
-        </button>
+        <button><Menu/></button>
       )}
     </nav>
 
   )
 }
 
-
+  
 export default Nav
