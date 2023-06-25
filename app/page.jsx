@@ -5,7 +5,7 @@ import About from "@components/About"
 
 const Home = () => {
   return (
-    <div>
+    <>
     <section className="hero">
       <h1 className="head_text text-center">Sofia Soromenho
       <br className="max-md:hidden" />
@@ -16,7 +16,7 @@ const Home = () => {
     {/* <Projects/>
     <About/> */}
 
-  </div>
+  </>
 
   )
 }

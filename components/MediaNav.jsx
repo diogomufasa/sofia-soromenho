@@ -5,14 +5,11 @@ import { X } from "lucide-react";
 const MediaNav = () => {
     const [isToggled, setToggled] = useState(false);
 
-    useEffect(() => {
-        
-    })
-
-
 
     return (
+        <div>
         <X/>
+        </div>
     )
 }
 
