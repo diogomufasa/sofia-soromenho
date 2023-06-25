@@ -2,12 +2,13 @@
 import { Disc2 } from 'lucide-react';
 
 const Feed = () => {
-  return (
+  return (      
+  <div className='feed'>
+  <span className="cta_span"><Disc2 className="animate-pulse inline" color="#f45d5d"/> Current Project</span>
     <div className="cta">
-
-      <span className="cta_span"><Disc2 className="inline-block animate-pulse" color="#f45d5d"/> Current Project</span>
       <h1 className="head_text">Dance Museum</h1>
       <p>Explore the history of dance</p>
+    </div>
     </div>
   )
 }

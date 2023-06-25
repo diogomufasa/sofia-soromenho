@@ -88,7 +88,7 @@ nav {
 }
 
 .stickyNav {
-  @apply fixed top-0 left-0 bg-slate-50 shadow-md ;
+  @apply fixed top-0 left-0 bg-slate-50 shadow-md  ;
   z-index: 999;
 }
 
@@ -97,16 +97,27 @@ nav {
 }
 
 .hero{
-  @apply h-screen w-full flex-center justify-center items-center flex-col;
+  @apply h-screen w-full flex-center flex-col;
+}
+
+.head_text {
+  @apply mr-16 ml-16 text-5xl font-extrabold leading-[1.15] text-blue-950 sm:text-6xl;
+}
+
+
+/* FEED requires a big separation line between span */
+
+.feed {
+  @apply flex-center flex-col 
 }
 
 .cta {
-  @apply h-96 max-w-screen-2xl mx-auto flex-center z-40 flex-col gap-4 bg-blue-300 text-gray-50 rounded-lg transition-all
-  hover:saturate-100 hover:scale-105 hover:shadow-xl;; 
+  @apply h-96 max-w-screen-2xl mx-auto flex-center flex-col gap-4 bg-blue-300 text-gray-50 rounded-lg transition-all text-center z-40
+  hover:saturate-100 hover:scale-105 hover:shadow-xl; 
 }
 
 .cta_span {
-  @apply text-4xl font-bold border-b-4 border-blue-50 pb-2 rounded-sm;
+  @apply text-4xl font-bold m-6 pb-2 rounded-sm;
   font-family: 'Major Mono Display', monospace;
 }
 
@@ -122,9 +133,6 @@ nav {
   @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
-.head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-blue-950 sm:text-6xl;
-}
 
 .blue_gradient {
   @apply bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 bg-clip-text text-transparent;
@@ -155,8 +163,6 @@ nav {
   @apply text-lg transition-all hover:scale-105  hover:to-blue-800
   hover:font-extrabold;
 }
-
-
 
 
 
