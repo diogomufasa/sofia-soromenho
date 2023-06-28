@@ -78,18 +78,33 @@ nav {
 }
 
 /* Tailwind Styles */
+.app {
+  @apply relative z-10 flex-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
 
 .nav {
-  @apply flex-between w-full mb-16 pt-3 pb-3 px-6 transition-all;
+  @apply flex-between w-full mb-16 pt-3 pb-3 px-6 transition-all z-50;
 }
 
 .stickyNav {
-  @apply fixed top-0 left-0 bg-slate-50 shadow-md  ;
+  @apply fixed  top-0 left-0 bg-slate-50 shadow-md  ;
   z-index: 999;
 }
 
-.app {
-  @apply relative z-10 flex-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+.media_nav {
+  @apply fixed top-0 left-0 w-full h-full bg-slate-50 z-40 transition-all 
+}
+
+.media_links {
+  @apply flex flex-col justify-center items-center h-full gap-5;
+}
+
+.menu_icon {
+  @apply cursor-pointer;
+}
+
+.close_icon {
+  @apply absolute top-8 right-8 cursor-pointer;
 }
 
 .hero{

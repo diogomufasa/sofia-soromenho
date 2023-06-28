@@ -1,25 +1,19 @@
 import Link from "next/link";
-import { useState, useEffect} from "react";
 import { X } from "lucide-react";
 
-const MediaNav = () => {
-    const [isToggled, setToggled] = useState(true);
 
-    useEffect(() => {
-        if (isToggled) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "unset";
-        }
-    }, [isToggled]);
+// for each link, when clicked, toggle the menu if the link is linked to the current page
 
+const MediaNav = (props) => {
+    const { toggleMenu } = props;
 
     return (
-        <div className="media_nav__container">
-            <div onClick={() => setToggled(!isToggled)}>
-                <X size={24} />
-            </div>
-            <div className="media__links">
+        <div className="media_nav">
+            <X className="close_icon" size={24} />
+            <div className="media_links">
+                <Link href="/" className="link-hover" onClick={toggleMenu}>
+                    Home
+                </Link>            
                 <Link href="/about" className="link-hover">
                     About
                 </Link>
