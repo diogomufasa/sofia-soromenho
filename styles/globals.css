@@ -73,9 +73,6 @@
   }
 }
 
-nav {
-  font-family: 'Major Mono Display', monospace;
-}
 
 /* Tailwind Styles */
 .app {
@@ -84,6 +81,7 @@ nav {
 
 .nav {
   @apply flex-between w-full mb-16 pt-3 pb-3 px-6 transition-all z-50;
+  font-family: 'Major Mono Display', monospace;
 }
 
 .stickyNav {
@@ -92,7 +90,7 @@ nav {
 }
 
 .media_nav {
-  @apply fixed top-0 left-0 w-full h-full bg-slate-50 z-40 transition-all 
+  @apply fixed top-0 left-0 w-full h-full z-40 transition-all glassmorphism; 
 }
 
 .media_links {
@@ -115,6 +113,14 @@ nav {
   @apply mr-16 ml-16 text-5xl font-extrabold leading-[1.15] text-blue-950 sm:text-6xl;
 }
 
+.title {
+  @apply text-4xl font-bold m-6 pb-2 rounded-sm;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.sub {
+  @apply mt-5 text-lg sm:text-xl max-w-2xl text-gray-500;
+}
 
 /* FEED requires a big separation line between span */
 
@@ -127,15 +133,18 @@ nav {
   hover:saturate-100 hover:scale-105 hover:shadow-xl; 
 }
 
-.cta_span {
-  @apply text-4xl font-bold m-6 pb-2 rounded-sm;
-  font-family: 'Major Mono Display', monospace;
-}
+
 
 .cta_text {
   @apply text-2xl font-medium;
 }
 
+
+/* Projects */
+
+
+
+/*  */
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
@@ -153,9 +162,6 @@ nav {
   @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
 }
 
-.desc {
-  @apply mt-5 text-lg sm:text-xl max-w-2xl;
-}
 
 .search_input {
   @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
