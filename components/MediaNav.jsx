@@ -9,9 +9,9 @@ const MediaNav = (props) => {
 
     return (
         <div className="media_nav">
-            <X className="close_icon" size={24} />
+            <X className="close_icon" size={24}  onClick={toggleMenu}/>
             <div className="media_links">
-                <Link href="/" className="link-hover" onClick={toggleMenu}>
+                <Link href="/" className="link-hover">
                     Home
                 </Link>            
                 <Link href="/about" className="link-hover">
