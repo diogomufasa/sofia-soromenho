@@ -3,9 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect} from "react";
-import { Menu} from "lucide-react";
+import { Menu } from "lucide-react";
 import MediaNav from "./MediaNav";
-
+import { NAV_LINKS } from "@constant";
 
 
 const Nav = () => {
@@ -32,6 +32,8 @@ const Nav = () => {
     setToggled(!isToggled);
   }
 
+  const navLinks =  NAV_LINKS;
+
   return (
     <nav className={isSticky ? 'nav stickyNav' : 'nav'}>
       <div className="flex-between w-1/2">
@@ -46,22 +48,15 @@ const Nav = () => {
         </div>
         {!isCollapsed ? (
         <div className="flex-between w-1/2 text-right">
-          <Link href="/about" className="link-hover">
-            About
-          </Link>
-          <Link href="/gallery" className="link-hover" >
-            Gallery
-          </Link>
-          <Link href="/projects" className="link-hover">
-            Projects
-          </Link>
-          <Link href="/blog" className="link-hover">
-            Blog
-          </Link>
+          {navLinks.map((link) => (
+            <Link href={link.href} className="link-hover">
+              {link.text}
+            </Link>
+          ))}
       </div>
       ) : (
         <div>
-          {!isToggled ? <Menu className="menu_icon" size={24} onClick={toggleMenu} /> : <MediaNav toggleMenu={toggleMenu}/>}
+          {!isToggled ? <Menu className="menu_icon" size={24} onClick={toggleMenu} /> : <MediaNav toggleMenu={toggleMenu} navLinks={navLinks}/>}
         </div>
       )}
     </nav>

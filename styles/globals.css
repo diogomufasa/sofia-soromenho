@@ -114,8 +114,15 @@
 }
 
 .title {
-  @apply text-4xl font-bold m-6 pb-2 rounded-sm;
+  @apply text-4xl font-bold m-6 pb-2 rounded-sm relative;
   font-family: 'Major Mono Display', monospace;
+}
+
+.title::before {
+  @apply absolute top-1/2 left-0 transform -translate-y-1/2;
+  height: 2px;
+  width: calc(50% - 8rem);
+  background-color: #000;
 }
 
 .sub {

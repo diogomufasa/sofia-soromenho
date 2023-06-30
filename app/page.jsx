@@ -20,7 +20,6 @@ const Home = () => {
     <Projects/>
     </div>
   </>
-
   )
 }
 
