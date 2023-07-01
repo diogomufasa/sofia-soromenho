@@ -1,11 +1,9 @@
 'use client'
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { ArrowLeft } from 'lucide-react';
 
 const Error = () => {
-    const router = useRouter();
 
     return (
         <div className="error">
