@@ -49,7 +49,7 @@ const Nav = () => {
         {!isCollapsed ? (
         <div className="flex-between w-1/2 text-right">
           {navLinks.map((link) => (
-            <Link href={link.href} className="link-hover">
+            <Link href={link.href} className="link_hover">
               {link.text}
             </Link>
           ))}

@@ -1,6 +1,6 @@
 export const NAV_LINKS = [
-    { href: '#about', text: 'About' },
-    { href: '#gallery', text: 'Gallery' },
-    { href: '/projects', text: 'Projects' },
-    { href: '/blog', text: 'Blog' },
+    { href: '#about', text: 'about' },
+    { href: '#gallery', text: 'gallery' },
+    { href: '/projects', text: 'projects' },
+    { href: '/blog', text: 'blog' },
   ];

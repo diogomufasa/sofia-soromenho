@@ -7,13 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        satoshi: ['Comfortaa', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
-      },
       colors: {
         'primary-blue': '#082f49',
-      }
+      },
+      height: {
+        '95': '95%',
+      },  
     },
   },
   plugins: [],

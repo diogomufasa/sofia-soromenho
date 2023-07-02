@@ -11,11 +11,11 @@ const MediaNav = (props) => {
         <div className="media_nav" onClick={toggleMenu}>
             <X className="close_icon" size={24}  />
             <div className="media_links">
-                <Link href="/" className="link-hover">
+                <Link href="/" className="link_hover">
                     Home
                 </Link>            
                 {navLinks.map(link => (
-                <Link href={link.href} className="link-hover">
+                <Link href={link.href} className="link_hover">
                     {link.text}
                 </Link>
           ))}

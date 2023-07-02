@@ -3,7 +3,7 @@ import {Heart} from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="flex-between w-full mb-10 mt-16 pt-3 glassmorphism">
+    <footer className="flex-between w-full mb-10 mt-16 sm:px-10 pt-3 glassmorphism">
       <div className="flex-between w-1/2">
         <p className="text-center">© 2023 Sofia Soromenho</p>
       </div>
