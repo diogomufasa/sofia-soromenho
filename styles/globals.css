@@ -114,15 +114,8 @@
 }
 
 .title {
-  @apply text-4xl font-bold m-6 pb-2 rounded-sm relative;
+  @apply text-4xl font-bold m-6 pb-2 relative;
   font-family: 'Major Mono Display', monospace;
-}
-
-.title::before {
-  @apply absolute top-1/2 left-0 transform -translate-y-1/2;
-  height: 2px;
-  width: calc(50% - 8rem);
-  background-color: #000;
 }
 
 .sub {
@@ -132,19 +125,134 @@
 /* FEED requires a big separation line between span */
 
 .feed {
-  @apply flex-center flex-col 
+  @apply flex-center flex-col my-11 gap-8;
 }
 
-.cta {
-  @apply h-96 max-w-screen-2xl mx-auto flex-center flex-col gap-4 bg-blue-300 text-gray-50 rounded-lg transition-all text-center z-40
-  hover:saturate-100 hover:scale-105 hover:shadow-xl; 
+.card {
+  @apply h-96 w-11/12 mx-auto flex-center gap-4 bg-gray-200 text-slate-700 rounded-lg shadow-lg transition-all hover:shadow-xl;
+}
+
+.text1 {
+  @apply text-4xl font-bold text-gray-700 absolute uppercase tracking-wider ;
+}
+
+.text2 {
+  @apply pt-0.5 px-2 -translate-y-20 transition duration-200 opacity-0 tracking-wider break-before-auto;
+}
+.one {
+  width: 90%;
+  height: 95%;
+  background-color: #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+}
+
+.two {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 3%;
+  background-color: #9c9c9c;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+
+.three {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 3%;
+  background-color: #797979;
+  transition: 0.9s;
+  transition-delay: 0.2s;
+}
+
+.four {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ececec;
+  opacity: 0;
+  border-radius: 3%;
+  background-color: #5a5a5a;
+  transition: 0.8s;
+  transition-delay: 0.2s;
+}
+
+.five {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ececec;
+  opacity: 0;
+  border-radius: 3%;
+  background-color: #424242;
+  transition: 0.7s;
+  transition-delay: 0.2s;
+}
+
+.six {
+  width: 90%;
+  height: 95%;
+  color: #ececec;
+  text-align: center;
+  opacity: 0;
+  border-radius: 3%;
+  background-color: #302f2f;
+  transition: 0.6s;
+  transition-delay: 0.2s;
 }
 
 
 
-.cta_text {
-  @apply text-2xl font-medium;
+.card:hover .two {
+  opacity: 1;
+  transition: 0.4s;
 }
+
+.card:hover .three {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.card:hover .four {
+  opacity: 1;
+  transition: 0.6s;
+}
+
+.card:hover .five {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.card:hover .six {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.card:hover .text1, .card:hover .sub{
+  opacity: 0;
+}
+
+.card:hover .text2 {
+  transform: translateY(2em);
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+
 
 
 /* Projects */
@@ -152,14 +260,12 @@
 
 
 /*  */
-.black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
-}
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  @apply border-b-2 border-gray-700 bg-transparent transition-all text-center text-sm text-gray-700 tracking-wide flex-center px-2 opacity-70
+  hover:opacity-100 hover:scale-105 hover:uppercase hover:tracking-wider;
+  font-family: 'Major Mono Display', monospace;
 }
-
 
 .blue_gradient {
   @apply bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 bg-clip-text text-transparent;
@@ -168,7 +274,6 @@
 .green_gradient {
   @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
 }
-
 
 .search_input {
   @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
