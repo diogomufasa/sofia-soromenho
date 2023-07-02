@@ -82,7 +82,7 @@
 @layer components {
 
   .head_text {
-    @apply mr-16 ml-16 text-5xl font-extrabold leading-[1.15] text-blue-950 sm:text-6xl;
+    @apply mr-16 ml-16 text-5xl font-extrabold leading-[1.15] text-slate-900 sm:text-6xl tracking-wider;
   }
   
   .title {
@@ -91,7 +91,7 @@
   }
   
   .sub {
-    @apply mt-5 text-lg sm:text-xl max-w-2xl text-gray-500;
+    @apply mt-5 text-lg sm:text-xl max-w-2xl text-gray-500 tracking-normal;
   }
 
   .card:hover .text2 { 
@@ -162,7 +162,7 @@
 }
 
 .stickyNav {
-  @apply fixed top-0 left-0 bg-gray-100 shadow-md px-24 ;
+  @apply fixed top-0 left-0 bg-gray-100 shadow-md px-24 sm:px-6 ;
   z-index: 999;
 }
 
