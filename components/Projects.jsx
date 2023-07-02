@@ -7,8 +7,34 @@
 const Projects = () => {
     return (
         <div className="projects_grid">
-            
-
+            <div className="project">
+                <img src="/assets/images/1.jpg" alt="project" />
+                <div className="project_info">
+                    <h3>Project 1</h3>
+                    <p>Project description</p>
+                </div>
+            </div>
+            <div className="project">
+                <img src="/assets/images/2.jpg" alt="project" />
+                <div className="project_info">
+                    <h3>Project 2</h3>
+                    <p>Project description</p>
+                </div>
+            </div>
+            <div className="project">
+                <img src="/assets/images/3.jpg" alt="project" />
+                <div className="project_info">
+                    <h3>Project 3</h3>
+                    <p>Project description</p>
+                </div>
+            </div>
+            <div className="project">
+                <img src="/assets/images/4.jpg" alt="project" />
+                <div className="project_info">
+                    <h3>Project 4</h3>
+                    <p>Project description</p>
+                </div>
+            </div>
         </div>
     )
 }

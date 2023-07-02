@@ -80,6 +80,20 @@
 }
 
 @layer components {
+
+  .head_text {
+    @apply mr-16 ml-16 text-5xl font-extrabold leading-[1.15] text-blue-950 sm:text-6xl;
+  }
+  
+  .title {
+    @apply text-4xl font-bold m-6 pb-2 relative;
+    font-family: 'Major Mono Display', monospace;
+  }
+  
+  .sub {
+    @apply mt-5 text-lg sm:text-xl max-w-2xl text-gray-500;
+  }
+
   .card:hover .text2 { 
     transform: translateY(2em); 
     transition-delay: 0.5s; 
@@ -135,19 +149,20 @@
   }
   
 
-
-/* Tailwind Styles */
 .app {
   @apply relative z-10 flex-center flex-col w-full lg:px-8;
 }
 
+
+/*////////////////////////////////////////// NAVIGATION  ////////////////////////////////////*/
+
 .nav {
-  @apply flex-between w-full mb-16 pt-3 pb-3 px-6 transition-all z-50 text-slate-700;
+  @apply flex-between w-full mb-16 pt-3 pb-3 px-16 transition-all z-50 text-slate-700;
   font-family: 'Major Mono Display', monospace;
 }
 
 .stickyNav {
-  @apply fixed top-0 left-0 bg-gray-100 shadow-md px-8 ;
+  @apply fixed top-0 left-0 bg-gray-100 shadow-md px-24 ;
   z-index: 999;
 }
 
@@ -172,24 +187,17 @@
   hover:scale-105  hover:to-blue-800 hover:uppercase;
 }
 
+/*////////////////////////////////////////// HERO  ////////////////////////////////////*/
+
 .hero{
   @apply h-screen w-full flex-center flex-col;
 }
 
-.head_text {
-  @apply mr-16 ml-16 text-5xl font-extrabold leading-[1.15] text-blue-950 sm:text-6xl;
+.hero_profile {
+  @apply w-40 h-40 rounded-full bg-gray-200 flex-center shadow-lg;
 }
 
-.title {
-  @apply text-4xl font-bold m-6 pb-2 relative;
-  font-family: 'Major Mono Display', monospace;
-}
-
-.sub {
-  @apply mt-5 text-lg sm:text-xl max-w-2xl text-gray-500;
-}
-
-/* FEED requires a big separation line between span */
+/*////////////////////////////////////////// FEED  ////////////////////////////////////*/
 
 .feed {
   @apply flex-center flex-col my-11 gap-8 h-screen;
@@ -262,6 +270,13 @@
 }
 
 
-/* Projects grid */
+/*////////////////////////////////////////// PROJECTS  ////////////////////////////////////*/
 
+.projects {
+  @apply flex-center flex-col gap-8 h-screen;
+}
+
+.projects_grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8;
+}
 

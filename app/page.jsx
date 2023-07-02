@@ -17,7 +17,8 @@ const Home = () => {
 
       <span className="title"><Disc2 className="animate-pulse inline" color="#f45d5d"/> current work</span>
       <Feed />
-    </div>  
+    </div>
+    <hr className="hr"/>  
     <div className="projects">
       <span className="title">projects</span>  
     <Projects/>
