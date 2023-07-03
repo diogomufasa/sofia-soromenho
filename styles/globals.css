@@ -162,7 +162,7 @@
 }
 
 .stickyNav {
-  @apply fixed top-0 left-0 bg-gray-100 shadow-md px-24 sm:px-6 ;
+  @apply fixed top-0 left-0 bg-gray-100 shadow-md lg:px-24 sm:px-1 ;
   z-index: 999;
 }
 
@@ -277,6 +277,31 @@
 }
 
 .projects_grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full h-3/4 gap-8;
+}
+
+
+.project_card {
+  @apply flex-center flex-col gap-4 rounded-md bg-gray-200 text-slate-700 shadow-lg transition-all hover:shadow-xl;
+}
+
+.project_img {
+  @apply max-w-5xl max-h-60 rounded-t-md bg-gray-200 border-b border-gray-300 flex-center transition-all;
+}
+
+.project_info {
+  @apply flex-col flex max-h-40 w-full px-2;
+}
+
+.project_title {
+  @apply text-2xl font-bold uppercase tracking-wider transition-all;
+}
+
+.project_desc {
+  @apply text-base text-gray-500 tracking-wider transition-all truncate;
+}
+
+.project_card:hover .project_desc {
+  @apply text-gray-700;
 }
 
