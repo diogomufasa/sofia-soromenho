@@ -5,3 +5,6 @@ Mestre em Performance Artística/Dança pela FMH e licenciada em Dança/Espectá
 #### More Info: [inetmd.pt](http://www.inetmd.pt/index.php/pessoas/integradosnaodoutorados/doutorandos/1870-sofia-soromenho)
 
 ***Note: This project is under development***
+
+
+lucide icons; Next.js; Motion

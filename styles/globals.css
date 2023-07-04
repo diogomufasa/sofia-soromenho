@@ -101,7 +101,7 @@
   }
 
   .outline_btn {
-    @apply border-b-2 border-gray-700 bg-transparent transition-all text-center text-sm text-gray-700 tracking-wide flex-center px-2 opacity-70
+    @apply border-b-2 border-gray-700 bg-transparent transition-all text-center text-sm text-gray-700 tracking-wide flex-center px-2 mt-1 opacity-70
     hover:opacity-100 hover:scale-105 hover:uppercase hover:tracking-wider;
     font-family: 'Major Mono Display', monospace;
   }
@@ -273,7 +273,7 @@
 /*////////////////////////////////////////// PROJECTS  ////////////////////////////////////*/
 
 .projects {
-  @apply flex-center flex-col gap-8 h-screen;
+  @apply flex-center flex-col gap-8 min-h-screen;
 }
 
 .projects_grid {
@@ -282,15 +282,15 @@
 
 
 .project_card {
-  @apply flex-center flex-col gap-4 rounded-md bg-gray-200 text-slate-700 shadow-lg transition-all hover:shadow-xl;
+  @apply flex-center flex-col max-w-md max-h-96 rounded-md bg-gray-200 text-slate-700 shadow-lg transition-all hover:shadow-xl;
 }
 
 .project_img {
-  @apply max-w-5xl max-h-60 rounded-t-md bg-gray-200 border-b border-gray-300 flex-center transition-all;
+  @apply  rounded-t-md bg-gray-200 border-b border-gray-300 flex-center transition-all;
 }
 
 .project_info {
-  @apply flex-col flex max-h-40 w-full px-2;
+  @apply flex-col flex h-1/4 p-3;
 }
 
 .project_title {
@@ -298,10 +298,13 @@
 }
 
 .project_desc {
-  @apply text-base text-gray-500 tracking-wider transition-all truncate;
+  @apply text-base text-gray-500  whitespace-break-spaces truncate transition-all;
 }
 
 .project_card:hover .project_desc {
   @apply text-gray-700;
 }
+
+
+/*////////////////////////////////////////// ABOUT  ////////////////////////////////////*/
 

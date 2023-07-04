@@ -6,13 +6,38 @@ import { Disc2, ArrowRight } from 'lucide-react';
 import Link from "next/link";
 
 const Home = () => {
+
+
+  const homeVariant = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+    
+    },
+      
+    transition: {
+        duration: 1.5,
+      
+      },
+
+    whileInView: {
+      opacity: 1,
+    
+    },
+  }
+
+
+
   return (
     <>
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      initial="initial"
+      animate="animate"
+      transition="transition"
       className="hero"
+      variants={homeVariant}
     >
       <h1 className="head_text text-center">Sofia Soromenho
       <br className="max-md:hidden" />
@@ -21,25 +46,38 @@ const Home = () => {
     </motion.div>
     <hr className="hr"/>  
     <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 2 }}
+    initial="initial"
+    whileInView="whileInView"
+    transition="transition"
     className="feed"
+    variants={homeVariant}
     >
       <span className="title"><Disc2 className="animate-pulse inline" color="#f45d5d"/> current work</span>
       <Feed />
     </motion.div>
     <hr className="hr"/>  
     <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 2}}
+    initial="initial"
+    whileInView="whileInView"
+    transition="transition"
     className="projects"
+    variants={homeVariant}
     >
       <span className="title">projects</span>  
     <Projects/>
     <button className="outline_btn"><Link href="/projects">see all projects<ArrowRight className="inline" size={16}/> </Link></button>
     </motion.div>
+    <hr className="hr"/>
+    <motion.div
+    initial="initial"
+    whileInView="whileInView"
+    transition="transition"
+    className="about"
+    variants={homeVariant}
+    >
+      <span className="title">about</span>
+
+    </motion.div>  
 
   </>
   )
