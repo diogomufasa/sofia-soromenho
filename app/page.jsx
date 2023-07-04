@@ -63,9 +63,9 @@ const Home = () => {
     className="projects"
     variants={homeVariant}
     >
-      <span className="title">projects</span>  
+      <span className="title mt-8">projects</span>  
     <Projects/>
-    <button className="outline_btn"><Link href="/projects">see all projects<ArrowRight className="inline" size={16}/> </Link></button>
+    <button className="outline_btn mb-8"><Link href="/projects">see all projects<ArrowRight className="inline" size={16}/> </Link></button>
     </motion.div>
     <hr className="hr"/>
     <motion.div

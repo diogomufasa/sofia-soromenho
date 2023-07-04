@@ -129,7 +129,10 @@
     @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
   }
 
-  
+  .overlay {
+    @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-md z-50 transition-all duration-500;
+  }
+
   .flex-center {
     @apply flex justify-center items-center;
   }
@@ -286,7 +289,7 @@
 }
 
 .project_img {
-  @apply  rounded-t-md bg-gray-200 border-b border-gray-300 flex-center transition-all;
+  @apply  rounded-t-md bg-gray-200 border-b-2 border-gray-300 flex-center transition-all;
 }
 
 .project_info {
@@ -304,6 +307,34 @@
 .project_card:hover .project_desc {
   @apply text-gray-700;
 }
+
+/* ////////////////////////////////////////// MODAL //////////////////////////////////// */
+
+.modal {
+  @apply fixed top-0 left-0 w-full h-full z-50 flex-center flex-col gap-8;
+}
+
+.modal_content {
+  @apply flex-center flex-col gap-8 rounded-md bg-gray-200 text-slate-700 shadow-lg transition-all hover:shadow-xl;
+}
+
+.modal_img {
+  @apply rounded-t-md bg-gray-200 border-b-2 border-gray-300 flex-center transition-all;
+}
+
+.modal_info {
+  @apply flex-col flex h-1/2 p-3;
+}
+
+.modal_title {
+  @apply text-4xl font-bold uppercase tracking-wider transition-all;
+}
+
+.modal_desc {
+  @apply text-base text-gray-500  whitespace-break-spaces  transition-all;
+}
+
+
 
 
 /*////////////////////////////////////////// ABOUT  ////////////////////////////////////*/
