@@ -1,6 +1,7 @@
 'use client'
 import Feed from "@components/Feed"
 import Projects from "@components/Projects"
+import About from "@components/About"
 import { motion } from 'framer-motion'
 import { Disc2, ArrowRight } from 'lucide-react';
 import Link from "next/link";
@@ -76,8 +77,9 @@ const Home = () => {
     variants={homeVariant}
     >
       <span className="title">about</span>
-
-    </motion.div>  
+      <About/>
+    </motion.div>
+    <hr className="hr"/>  
 
   </>
   )

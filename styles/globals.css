@@ -341,4 +341,9 @@
 
 
 /*////////////////////////////////////////// ABOUT  ////////////////////////////////////*/
+/* // // Portrait rectangle profile image at the left of the sub/header, paragrapgh and social media buttons */
+
+.about {
+  @apply flex-center flex-col gap-8 min-h-screen;
+}
 
