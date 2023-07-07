@@ -19,7 +19,7 @@ const Home = () => {
     },
       
     transition: {
-        duration: 1.5,
+        duration: 1.8,
       
       },
 
@@ -74,6 +74,7 @@ const Home = () => {
     whileInView="whileInView"
     transition="transition"
     className="about"
+    id="about"
     variants={homeVariant}
     >
       <span className="title">about</span>

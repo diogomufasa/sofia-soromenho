@@ -19,7 +19,7 @@ const Nav = () => {
     });
 
     // Check if the screen is less than 768px
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 1068px)");
     setCollapsed(mediaQuery.matches);
 
     // Check if the screen width has changed (resize event)
