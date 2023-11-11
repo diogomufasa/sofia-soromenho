@@ -1,4 +1,4 @@
-# Portefolio Template SOFIA SOROMENHO
+# Portefolio Template - SOFIA SOROMENHO
 
 ## Overview
 
@@ -20,7 +20,7 @@ This project was purpose made, and, thus incomplete and requiures bug fixes. I h
 - **Projects**: A showcase of projects.
 - **Blog**
 
-## **IMPORTANT NOTICE: This project was orignally devoloped for © 2023 Sofia Soromenho. All rights reserved.**
+## ***IMPORTANT NOTICE: This project was orignally devoloped for © 2023 Sofia Soromenho. All rights reserved.***
 
 ### Sofia Soromenho
 
@@ -28,18 +28,10 @@ Mestre em Performance Artística/Dança pela FMH e licenciada em Dança/Espectá
 
 #### More Info: [inetmd.pt](http://www.inetmd.pt/index.php/pessoas/integradosnaodoutorados/doutorandos/1870-sofia-soromenho)
 
-<<<<<<< HEAD
 ## Contributing
-=======
-***Note: This project is under development, suggestions and issues are welcome***
->>>>>>> bf71397e71a4e28d8df36fb84bab5a638a3bf490
 
-Please read [CONTRIBUTING.md] for details on our code of conduct, and the process for submitting pull requests to me.
+#### Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to me.
 
-<<<<<<< HEAD
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md] file for details.
-=======
-lucide icons; Next.js; Motion
->>>>>>> bf71397e71a4e28d8df36fb84bab5a638a3bf490
+#### This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
