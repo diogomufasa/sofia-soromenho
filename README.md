@@ -6,7 +6,6 @@ This project was purpose made, and, thus incomplete and requiures bug fixes. I h
 
 ## Tech stack and Frameworks
 
-![](https://img.shields.io/badge/html5-✓-green.svg)
 ![](https://img.shields.io/badge/tailwind-✓-green.svg)
 ![](https://img.shields.io/badge/JavaScript-✓-green.svg)
 ![](https://img.shields.io/badge/Next.js-✓-green.svg)
